@@ -1,0 +1,23 @@
+html {
+    background-image: url("src/assets/botw-background_03_detail.jpg");
+    background-size: 1920px 1200px;
+}
+
+img {
+    width: 30%;
+    border-radius: 20px;
+}
+
+.item {
+    background-color: lightgrey;
+    opacity: .6;
+    /* margin: 0px;
+    padding: 3px; */
+    border: 2px double darkslategrey;
+    border-radius: 15px;
+}
+
+h2{
+    text-align: center;
+}
+

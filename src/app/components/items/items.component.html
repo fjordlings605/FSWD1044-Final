@@ -1,0 +1,20 @@
+<html>
+    <h2>Get your Wild Things here! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ...it's dangerous to go alone...</h2>    
+    
+    <mat-grid-list cols="3" rowHeight="2:1">
+        <mat-grid-tile class="item" *ngFor="let i of itemsList">
+            <mat-grid-list cols="2" rowHeight="1:1">
+                <!-- <mat-grid-tile class="pic"> -->
+                    <img mat-card-md-image src={{i.image}} alt="item pic">
+                <!-- </mat-grid-tile> -->
+                <!-- <mat-grid-tile class="info"> -->
+                    <mat-card-title>{{i.name}}</mat-card-title>
+                    <mat-card-subtitle>{{i.price}} rupees</mat-card-subtitle>
+                    <button class="view" [routerLink]='["/items",i.id]'>View</button>
+                <!-- </mat-grid-tile> -->
+            </mat-grid-list>
+            <!-- <app-item-card></app-item-card> -->
+        </mat-grid-tile>
+    </mat-grid-list>
+      
+</html>

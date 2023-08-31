@@ -1,0 +1,76 @@
+{
+    "itemsList": [
+        { 
+            "id": "1",
+            "name": "Banana-Pot-Lid",
+            "price": 100,
+            "image": "assets/banana-potlid.jpg",
+            "description": "Banana Pot-lid much amazing Goron Tingle",
+            "type": "shield" 
+        },
+        {
+            "id": "2",
+            "name": "President Hudson Shield",
+            "price": 300,
+            "image": "assets/presHudson-shield.jpg",
+            "description": "President Hudson extremely Bongo Bongo Rauru stuff",
+            "type": "shield"
+        },
+        {
+            "id": "3",
+            "name": "Octo-Balloon Shield",
+            "price": 250,
+            "image": "assets/octorok-shield.jpg",
+            "description": "Octorok Balloon, well possibly quite definitely apparently right frankly specifically most whenever well seriously clearly totally relatively strongly heavily frequently floaty things",
+            "type": "shield"
+        },
+        {
+            "id": "4",
+            "name": "Korok Mask",
+            "price": 900,
+            "image": "assets/korok-mask.jpg",
+            "description": "Korok ya ha ha, basically completely actually Deku",
+            "type": "mask"
+        },
+        {
+            "id": "5",
+            "name": "Majora's Mask",
+            "price": 2000,
+            "image": "assets/majoras-mask.jpg",
+            "description": "Much Sheikah like necessarily rather anyway amazing much Majora",
+            "type": "mask"
+        },
+        {
+            "id": "6",
+            "name": "Horriblin Mask",
+            "price": 1500,
+            "image": "assets/horriblin-mask.jpg",
+            "description": "Horriblin strongly whatever Cave-dweller Monster",
+            "type": "mask"
+        },
+        {
+            "id": "7",
+            "name": "Tree Branch-Branch",
+            "price": 50,
+            "image": "assets/treeBranch-branch.jpg",
+            "description": "Right frankly specifically most branch-tree-branch ",
+            "type": "weapon"
+        },
+        {
+            "id": "8",
+            "name": "Diamond-Reaper",
+            "price": 550,
+            "image": "assets/diamond-reaper.jpg",
+            "description": "Most definitely sword possibly surely diamond",
+            "type": "weapon"
+        },
+        {
+            "id": "9",
+            "name": "Cheese-Stick",
+            "price": 150,
+            "image": "assets/cheese-stick.jpg",
+            "description": "Stick perhaps cheese seriously very Tingle slightly ",
+            "type": "weapon"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+html {
+    background-image: url("src/assets/botw-background_04.jpg");
+    background-size: 100%;
+}
+.about {
+    background-color: lightgrey;
+    opacity: .8;
+    border: 10px double darkslategrey;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 10px;
+}

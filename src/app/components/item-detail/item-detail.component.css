@@ -1,0 +1,22 @@
+html {
+    background-image: url('src/assets/botw-background_01.jpg');
+    background-size: 150%;
+}
+
+img {
+    max-width: 800px;
+    max-height: 600px;
+    margin: 10px 10px 5px 20px;
+    border: 10px solid darkslategrey;
+    border-radius: 15px;
+    
+}
+
+.detail {
+    background-color: lightgrey;
+    opacity: .8;
+    margin:5px 10px 10px 20px;
+    border: 10px solid darkslategrey;
+    border-radius: 5px;
+    padding: 10px 10px 10px 20px;
+}
