@@ -79,14 +79,6 @@
       "image": "assets/motorized-unicycle.jpg",
       "description": "heavily totally Master Sword things badly Bongo Bongo anyway",
       "type": "machine"
-    },
-    {
-      "id": 11,
-      "name": "stuff",
-      "price": 78,
-      "image": "n/a",
-      "description": "and all that jazz",
-      "type": "things"
     }
   ]
 }

@@ -21,4 +21,11 @@ export class ItemDetailComponent {
     // this.selectedItem = this.itemService.getItemByID(this.itemID);
   }
 
+  onDelete(id: number) {
+    this.itemService.deleteItem(id).subscribe(response => {
+      console.log(response);
+      this.router.navigateByUrl("/items");
+    })
+  }
+
 }

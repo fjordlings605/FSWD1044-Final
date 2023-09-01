@@ -16,6 +16,7 @@ export class ItemsService {
     return this.http.get<Items[]>(this.itemSource);
   }
 
+  
   getItemByID(id: number): Observable<Items> {
     return this.http.get<Items>(this.itemSource + "/"+ id);
   }
@@ -24,5 +25,11 @@ export class ItemsService {
     return this.http.post<Items>(this.itemSource, newItem);
   }
 
+  editItem(id: number, itemEdit: Items): Observable<Items> {
+    return this.http.put<Items>(this.itemSource + "/" + id, itemEdit);
+  }
   
+  deleteItem(id: number): Observable<any> {
+    return this.http.delete<any>(this.itemSource + "/" + id);
+  }
 }

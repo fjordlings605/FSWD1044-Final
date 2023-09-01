@@ -7,5 +7,7 @@
         <h4>Description: {{selectedItem.description}}</h4><br><br>
         <div id="back" routerLink="/items"> <-- Back</div>
     </div>
+    <button id="edit" [routerLink]='["/edit/"+selectedItem.id]'>Edit Item</button>
+    <button id="delete" (click)="onDelete(selectedItem.id)">Delete Item</button>
     
 </html> 

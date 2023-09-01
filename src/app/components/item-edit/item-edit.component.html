@@ -1,1 +1,25 @@
-<p>item-edit works!</p>
+<html>
+    <div>
+        <h1 id="heading">Add a New Item</h1>
+        <form #editForm="ngForm" (ngSubmit)="doSubmit()">
+            <label> Name of Item: </label><br>
+            <input type="text" name="name" [(ngModel)]="selectedItem.name"><br><br>
+
+            <label> Price: (in Rupees) </label><br>
+            <input type="number" name="price" [(ngModel)]="selectedItem.price"><br><br>
+
+            <label> Item Type: (i.e. 'weapon', 'mask', 'shield', or other)</label><br>
+            <input type="text" name="type" [(ngModel)]="selectedItem.type"><br><br>
+
+            <label> Item Description: </label><br>
+            <input type="text" name="description" [(ngModel)]="selectedItem.description"><br><br>
+
+            <label> Image link: (url or local reference)</label><br>
+            <input type="url" name="image" [(ngModel)]="selectedItem.image"><br><br>
+
+            <button type="submit">Update Item</button>
+        </form>
+    </div>
+
+
+</html>>
