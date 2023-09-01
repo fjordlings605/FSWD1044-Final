@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { Items } from 'src/app/models/items';
 import { ItemsService } from 'src/app/services/items.service';
 
+
 @Component({
   selector: 'app-item-add',
   templateUrl: './item-add.component.html',
@@ -12,20 +13,13 @@ export class ItemAddComponent {
 
   newItem: Items = new Items();
 
-  list: Items[] = [];
-
   constructor(private itemService: ItemsService, private router: Router) { }
 
   ngOnInit(): void{
-
   }
 
   onSubmit() {
     this.itemService.AddItem(this.newItem).subscribe(thing => {
-      this.itemService.getAllItems().subscribe(response => {
-        this.list = response;
-      })
-      this.newItem.id = this.list.length + 1;
       console.log(thing);
       this.router.navigateByUrl("/items");
     })
