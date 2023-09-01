@@ -1,6 +1,6 @@
 html {
     background-image: url("src/assets/botw-background_03_detail.jpg");
-    background-size: 1920px 1200px;
+    background-size:  100%;
 }
 
 img {
@@ -19,5 +19,17 @@ img {
 
 h2{
     text-align: center;
+    margin: 10px 30px;
 }
 
+#topBit {
+    display: flex;
+    justify-content: center;
+}
+
+#add {
+    width: 50px;
+    height: 30px;
+    margin: 0px 50px;
+    align-self: center;
+}

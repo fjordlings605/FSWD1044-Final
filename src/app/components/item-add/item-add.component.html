@@ -1,1 +1,25 @@
 <p>item-add works!</p>
+<html>
+    <div id="form">
+        <h1 id="heading">Add a New Item</h1>
+        <form #addForm="ngForm" (ngSubmit)="onSubmit()">
+            <label> Name of Item: </label><br>
+            <input type="text" name="name" [(ngModel)]="newItem.name"><br><br>
+
+            <label> Price: (in Rupees) </label><br>
+            <input type="number" name="price" [(ngModel)]="newItem.price"><br><br>
+
+            <label> Item Type: (i.e. 'weapon', 'mask', 'shield', or other)</label><br>
+            <input type="text" name="type" [(ngModel)]="newItem.type"><br><br>
+
+            <label> Item Description: </label><br>
+            <input type="text" name="description" [(ngModel)]="newItem.description"><br><br>
+
+            <label> Image link: (url or local reference)</label><br>
+            <input type="url" name="image" [(ngModel)]="newItem.image"><br><br>
+
+            <button type="submit">Create Item</button>
+        </form>
+    </div>
+    <div id="back" routerLink="/items"> <-- Back</div>
+</html>

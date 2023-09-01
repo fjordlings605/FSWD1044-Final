@@ -1,6 +1,10 @@
 <html>
-    <h2>Get your Wild Things here! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  ...it's dangerous to go alone...</h2>    
-    
+    <div id="topBit">
+        <h2 >Get your Wild Things here!</h2> 
+            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -->
+        <h2 >...it's dangerous to go alone...</h2>  
+        <button  id="add" routerLink="/add">Add</button>
+    </div>
     <mat-grid-list cols="3" rowHeight="2:1">
         <mat-grid-tile class="item" *ngFor="let i of itemsList">
             <mat-grid-list cols="2" rowHeight="1:1">

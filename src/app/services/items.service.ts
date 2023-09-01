@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 export class ItemsService {
 
   itemSource: string = "http://localhost:3000/itemsList";
-
+  
   constructor(private http: HttpClient) { }
 
   getAllItems(): Observable<Items[]> {
@@ -19,4 +19,10 @@ export class ItemsService {
   getItemByID(id: number): Observable<Items> {
     return this.http.get<Items>(this.itemSource + "/"+ id);
   }
+
+  AddItem(newItem: Items): Observable<Items> {
+    return this.http.post<Items>(this.itemSource, newItem);
+  }
+
+  
 }
