@@ -1,24 +1,21 @@
 <html>
     <div id="topBit">
-        <h2 >Get your Wild Things here!</h2> 
+        <p class="heading" >Get your Wild Things here!</p> 
             <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -->
-        <h2 >...it's dangerous to go alone...</h2>  
+        <p class="heading"  >...it's dangerous to go alone...</p>  
         <button  id="add" routerLink="/add">Add</button>
     </div>
     <mat-grid-list cols="3" rowHeight="2:1">
-        <mat-grid-tile class="item" *ngFor="let i of itemsList">
-            <mat-grid-list cols="2" rowHeight="1:1">
-                <!-- <mat-grid-tile class="pic"> -->
-                    <img mat-card-md-image src={{i.image}} alt="item pic">
-                <!-- </mat-grid-tile> -->
-                <!-- <mat-grid-tile class="info"> -->
-                    <mat-card-title>{{i.name}}</mat-card-title>
-                    <mat-card-subtitle>{{i.price}} rupees</mat-card-subtitle>
+        <mat-grid-tile class="items" *ngFor="let i of itemsList">
+            <mat-card-title-group class="cont" >
+                <img class="item" mat-card-md-image src={{i.image}} alt="item pic">
+                <span class="item">                
+                    <p class="view">{{i.name}}</p>
+                    <p class="view">{{i.price}} rupees</p>
                     <button class="view" [routerLink]='["/items",i.id]'>View</button>
-                <!-- </mat-grid-tile> -->
-            </mat-grid-list>
-            <!-- <app-item-card></app-item-card> -->
+                </span>
+            </mat-card-title-group>           
         </mat-grid-tile>
     </mat-grid-list>
-      
+
 </html>

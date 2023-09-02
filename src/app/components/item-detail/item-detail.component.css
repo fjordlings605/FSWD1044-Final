@@ -1,23 +1,60 @@
 html {
     background-image: url('src/assets/botw-background_01.jpg');
     background-size: 150%;
+    font-family: 'zelda';
 }
 
 img {
-    max-width: 50%;
+    max-width: 40%;
     max-height: 65%;
-    margin: 10px 10px 5px 20px;
+    margin: 20px 10px 10px 50px;
     border: 10px solid darkslategrey;
     border-radius: 15px;
     
 }
-
+.container {
+    display: flex;
+    flex-direction: row;
+}
 .detail {
     background-color: lightgrey;
     opacity: .8;
-    margin:5px 10px 10px 20px;
+    max-width: 40%;
+    max-height: 65%;
+    margin:20px 10px 10px 30px;
     border: 10px solid darkslategrey;
     border-radius: 5px;
     padding: 10px 10px 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#h1, #hName {
+    font-size-adjust: 2;
+}
+#hName {
+    text-align: right;
+}
+#h2, button, #h3 {
+    font-family: 'zelda2';
+    font-size: x-large;
+}
+/* #h3 {
+    font-size: large;
+} */
+
+button {
+    margin: 10px;
+    padding: 5px;
+}
+
+#back {
+    font-family: 'zelda';
+    font-size: x-large;
+}
+#back:hover {
+    cursor: pointer;
+    font-size-adjust: .6;
 }
 

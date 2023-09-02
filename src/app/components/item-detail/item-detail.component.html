@@ -1,13 +1,19 @@
 <html>
     <!-- <p>item-detail works!</p> -->
-    <img src={{selectedItem.image}} alt="wild thing pic">
-    <div class="detail">
-        <h1>Wild "{{selectedItem.type}}" Thing: {{selectedItem.name}}</h1>
-        <h2>Price: {{selectedItem.price}} Rupees</h2>
-        <h4>Description: {{selectedItem.description}}</h4><br><br>
-        <div id="back" routerLink="/items"> <-- Back</div>
+    <div class="container">
+        <img src={{selectedItem.image}} alt="wild thing pic">
+        <div class="detail">
+            <p id="h1">Wild "{{selectedItem.type}}" Thing:</p>
+            <p id="hName"> {{selectedItem.name}}</p>
+            <p id="h2">Price: &nbsp;&nbsp; {{selectedItem.price}} Rupees</p>
+            <p id="h3">Description:<br> {{selectedItem.description}}</p><br>
+            
+            <button id="edit" [routerLink]='["/edit/"+selectedItem.id]'>Edit Item</button>
+            <button id="delete" (click)="onDelete(selectedItem.id)">Delete Item</button>
+
+            <div id="back" routerLink="/items"> <-- Back</div>
+        </div>
     </div>
-    <button id="edit" [routerLink]='["/edit/"+selectedItem.id]'>Edit Item</button>
-    <button id="delete" (click)="onDelete(selectedItem.id)">Delete Item</button>
+    
     
 </html> 

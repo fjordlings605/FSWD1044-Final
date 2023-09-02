@@ -18,7 +18,8 @@
   top: 0;
   z-index: 1;
   background-color: teal;
-  
+  font-family: 'zelda';
+  font-size-adjust: 1.5;
 }
 
 #logo {
@@ -26,8 +27,10 @@
   padding: 10px 30px;
 }
 
-.navLinks {
-  padding: 20px;
+.navLinks p {
+  padding: 10px 30px;
+  font-family: 'zelda';
+  font-size-adjust: 1;
   
 }
 
@@ -51,4 +54,16 @@
     padding: 10px;
     background-color: #c54e2b;
     color: #d4ce46;
+  }
+
+  #extra {
+    color: #61b2a7;
+  }
+
+  .hover {
+    cursor: pointer;
+  }
+
+  .hover:hover {
+    background-color: #5b9270;
   }

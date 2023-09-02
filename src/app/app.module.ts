@@ -23,7 +23,6 @@ import { ItemCardComponent } from './components/items/item-card/item-card.compon
 import { FormsModule } from '@angular/forms';
 
 
-
 @NgModule({
   declarations: [
     AppComponent,

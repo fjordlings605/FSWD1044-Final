@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Banana-Pot-Lid",
-      "price": 100,
+      "price": 105,
       "image": "assets/banana-potlid.jpg",
       "description": "Banana Pot-lid much amazing Goron Tingle",
       "type": "shield"
@@ -79,6 +79,14 @@
       "image": "assets/motorized-unicycle.jpg",
       "description": "heavily totally Master Sword things badly Bongo Bongo anyway",
       "type": "machine"
+    },
+    {
+      "id": 11,
+      "name": "BANDIT JUNK",
+      "price": 54,
+      "image": "/assets/stabil-apult.jpg",
+      "description": "noooooooooooooooooo!",
+      "type": "MISC"
     }
   ]
 }
