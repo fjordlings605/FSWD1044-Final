@@ -1,9 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { Items } from 'src/app/models/items';
 import { ItemsService } from 'src/app/services/items.service';
-import { MatCard } from '@angular/material/card';
-import { MatGridListModule } from '@angular/material/grid-list';
-
 
 
 @Component({

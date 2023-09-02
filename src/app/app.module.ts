@@ -21,7 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ItemCardComponent } from './components/items/item-card/item-card.component';
 import { FormsModule } from '@angular/forms';
-import { FeaturesComponent } from './components/features/features.component';
+import { MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -35,8 +35,7 @@ import { FeaturesComponent } from './components/features/features.component';
     ItemAddComponent,
     NotFoundComponent,
     NavPageComponent,
-    ItemCardComponent,
-    FeaturesComponent
+    ItemCardComponent
   ],
   imports: [
     BrowserModule,
@@ -50,7 +49,8 @@ import { FeaturesComponent } from './components/features/features.component';
     HttpClientModule,
     MatCardModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
