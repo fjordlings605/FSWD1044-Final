@@ -3,7 +3,7 @@
       [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="(isHandset$ | async) === false">
-    <mat-toolbar><img id="logo" src="assets\Wild-Logo.png" alt="wildCo Logo"></mat-toolbar>
+    <mat-toolbar><p>Menu</p></mat-toolbar>
     <mat-nav-list class="navLinks">
       <p id="extra">extra</p>
       <p class="hover" mat-list-item routerLink="/home">Home_Link</p>
@@ -22,7 +22,10 @@
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
       <div class="cont">
-      <span class="element">A Taste of The Wild</span>
+      <span class="element">
+        <img id="logo" src="assets\Wild-Logo.png" alt="wildCo Logo">
+        <p id="taste">A Taste of The Wild</p>
+      </span>
       
     </div>
     </mat-toolbar>
@@ -30,7 +33,7 @@
     <router-outlet></router-outlet>
     <div class="footer" #footer>
       <h3 class="bits"> &copy;2023 A Taste of the Wild, Inc.</h3>
-      <h3 class="bits"> Designed & Maint by: Fjordlings LLC</h3>
+      <h3 class="bits"> Designed & Maintained by: Fjordlings LLC</h3>
     </div>
   </mat-sidenav-content>
   

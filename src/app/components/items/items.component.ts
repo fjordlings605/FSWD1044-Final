@@ -3,7 +3,8 @@ import { Items } from 'src/app/models/items';
 import { ItemsService } from 'src/app/services/items.service';
 import { MatCard } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-
+import { MatIconButton } from '@angular/material/button';
+import { NgTemplateOutlet } from '@angular/common';
 
 
 @Component({
