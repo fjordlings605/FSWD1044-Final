@@ -21,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ItemCardComponent } from './components/items/item-card/item-card.component';
 import { FormsModule } from '@angular/forms';
+import { FeaturesComponent } from './components/features/features.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FormsModule } from '@angular/forms';
     ItemAddComponent,
     NotFoundComponent,
     NavPageComponent,
-    ItemCardComponent
+    ItemCardComponent,
+    FeaturesComponent
   ],
   imports: [
     BrowserModule,
