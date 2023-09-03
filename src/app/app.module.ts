@@ -21,6 +21,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { ItemCardComponent } from './components/item-card/item-card.component';
 import { FormsModule } from '@angular/forms';
+import { MatMenuModule} from '@angular/material/menu';
 
 
 @NgModule({
@@ -48,7 +49,8 @@ import { FormsModule } from '@angular/forms';
     HttpClientModule,
     MatCardModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
