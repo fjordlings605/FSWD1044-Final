@@ -25,6 +25,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { FeatureBarComponent } from './components/feature-bar/feature-bar.component';
 import {MatInputModule} from '@angular/material/input'; 
 import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatSelectModule} from '@angular/material/select';
 
 
 
@@ -57,7 +58,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     MatMenuModule,
     MatExpansionModule,
     MatInputModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]

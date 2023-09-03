@@ -2,23 +2,38 @@
     
     <div id="topBit">
         <p class="heading" >Get your Wild Things here!</p> 
-            <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -->
         <p class="heading"  >...it's dangerous to go alone...</p>  
-        <button  id="add" routerLink="/add">Add</button>
-        <mat-expansion-panel class="heading" hideToggle>
-            <mat-expansion-panel-header>
-              <mat-panel-title>
-                Search:
-              </mat-panel-title>
-              <mat-panel-description>
-                search for content
-              </mat-panel-description>
-            </mat-expansion-panel-header>
-            <mat-form-field class="example-full-width">
-                <mat-label>Search for:</mat-label>
-                <input matInput placeholder="Ex. korok" value="">
+        
+        <!-- menu -->
+        <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+        <mat-menu #menu="matMenu">
+            <button id="add" mat-button routerLink="/add">Add</button>
+            <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    Search:
+                  </mat-panel-title>
+                  <mat-panel-description>
+                    for content
+                  </mat-panel-description>
+                </mat-expansion-panel-header>
+                <mat-form-field class="example-full-width">
+                    <mat-label>Search for:</mat-label>
+                    <input matInput placeholder="Ex. korok" value="">
+                  </mat-form-field>
+              </mat-expansion-panel>
+              
+              <mat-form-field>
+                <mat-label>Sort Items by:</mat-label>
+                <mat-select>
+                  <mat-option>name</mat-option>
+                  <mat-option>price</mat-option>
+                  <mat-option>type</mat-option>
+                </mat-select>
               </mat-form-field>
-          </mat-expansion-panel>
+        </mat-menu>
+
+        
         <!-- <form class="sort" #orderForm="ngForm" (ngSubmit)="submitSort()">
             <label>Min Price</label>
             <input type="number" name="min"[(ngModel)]={{minPrice}}>

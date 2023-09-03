@@ -26,17 +26,21 @@ html {
 
 #topBit {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-wrap:wrap;
+    padding: 10px;
 }
-
-#add, button {
+#add {
+    font-family: 'zelda';
+    font-size: x-large;
+}
+button {
     width: 50px;
     height: 30px;
     margin: 0px 50px;
     align-self: center;
     font-family: 'zelda';
-    font-size: large;
+    font-size: x-large;
 }
 /* .cont{
     display: flex;
@@ -60,6 +64,7 @@ html {
 } */
 mat-grid-tile {
     max-height: 300px;
+    margin: 5px;
     
 }
 
