@@ -56,6 +56,8 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  font-family: 'zelda2';
+  font-size-adjust: 1;
   }
 
   .bits {
