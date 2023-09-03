@@ -19,7 +19,6 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatGridListModule } from '@angular/material/grid-list';
-import { ItemCardComponent } from './components/item-card/item-card.component';
 import { FormsModule } from '@angular/forms';
 import { MatMenuModule} from '@angular/material/menu';
 
@@ -34,8 +33,7 @@ import { MatMenuModule} from '@angular/material/menu';
     ItemEditComponent,
     ItemAddComponent,
     NotFoundComponent,
-    NavPageComponent,
-    ItemCardComponent
+    NavPageComponent
   ],
   imports: [
     BrowserModule,

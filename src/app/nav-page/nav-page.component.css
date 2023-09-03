@@ -29,8 +29,12 @@
 }
 
 #logo {
-  max-width: 50px;
-  padding: 10px 30px;
+  max-width: 55px;
+  padding: 10px ;
+}
+#logo:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .navLinks p {

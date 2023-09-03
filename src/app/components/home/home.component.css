@@ -7,6 +7,11 @@ html {
     display: flex;
     align-items: flex-start;
     margin: 20px auto;
+    max-width: 15%;
+}
+#logo:hover {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
 }
 
 p {
@@ -17,7 +22,7 @@ p {
     font-size: x-large;   
 }
 img {
-    width: 15%;
+    width: 40%;
     border-radius: 20px;
 }
 
@@ -46,5 +51,7 @@ img {
     display:flex;
     flex-direction:row;
     font-size: large;
+    font-family: 'zelda2';
+    font-size: x-large;
     
 }
