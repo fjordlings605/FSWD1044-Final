@@ -87,6 +87,14 @@
       "image": "/assets/stabil-apult.jpg",
       "description": "noooooooooooooooooo!",
       "type": "MISC"
+    },
+    {
+      "id": 12,
+      "name": "Homing Cart",
+      "price": 5500,
+      "image": "/assets/homing-cart.jpg",
+      "description": "heavily Hyrule widely strongly like rather Malon generally hopefully relatively whoever Rauru Zelda Bombchu clearly whatever entirely Nayru",
+      "type": "machine"
     }
   ]
 }

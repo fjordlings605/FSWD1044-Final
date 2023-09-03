@@ -1,23 +1,58 @@
 <html>
+    
     <div id="topBit">
         <p class="heading" >Get your Wild Things here!</p> 
             <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   -->
         <p class="heading"  >...it's dangerous to go alone...</p>  
         <button  id="add" routerLink="/add">Add</button>
+        <mat-expansion-panel class="heading" hideToggle>
+            <mat-expansion-panel-header>
+              <mat-panel-title>
+                Search:
+              </mat-panel-title>
+              <mat-panel-description>
+                search for content
+              </mat-panel-description>
+            </mat-expansion-panel-header>
+            <mat-form-field class="example-full-width">
+                <mat-label>Search for:</mat-label>
+                <input matInput placeholder="Ex. korok" value="">
+              </mat-form-field>
+          </mat-expansion-panel>
+        <!-- <form class="sort" #orderForm="ngForm" (ngSubmit)="submitSort()">
+            <label>Min Price</label>
+            <input type="number" name="min"[(ngModel)]={{minPrice}}>
+
+            <label>Max Price</label>
+            <input type="number" name="max"[(ngModel)]={{maxPrice}}>
+
+            <button type="submit">Sort</button>
+        </form> -->
                   
         
           
-    </div>
+    </div >
+  
     <mat-grid-list cols="3" rowHeight="2:1">
-        <mat-grid-tile class="items" *ngFor="let i of itemsList">
-            <mat-card-title-group class="cont" >
+        <mat-grid-tile  *ngFor="let i of itemsList">
+            <mat-card  class="item-card">
+                <div class="row">
+                    <mat-card-title class="col">{{i.name}}</mat-card-title>
+                    <mat-card-subtitle class="col">{{i.price}} rupees</mat-card-subtitle>
+                    <button class="col" mat-raised-button [routerLink]='["/items",i.id]'>View</button>
+                </div>
+                <img id="itPic" class="row" mat-card-image src={{i.image}} alt="item pic">
+                
+            </mat-card>
+          
+            <!-- <mat-card-title-group class="cont" >
                 <img class="item" mat-card-md-image src={{i.image}} alt="item pic">
                 <span class="item">                
                     <p class="view">{{i.name}}</p>
                     <p class="view">{{i.price}} rupees</p>
-                    <button class="view" [routerLink]='["/items",i.id]'>View</button>
+                    <button class="view" mat-raised-button [routerLink]='["/items",i.id]'>View</button>
                 </span>
-            </mat-card-title-group>           
+            </mat-card-title-group>            -->
         </mat-grid-tile>
     </mat-grid-list>
 
